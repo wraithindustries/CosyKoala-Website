@@ -39,8 +39,8 @@ body {
 		height: 240px;
 		background: radial-gradient(
 			50% 50% at 50% 50%,
-			rgba(color(orange, 500), 0.2) 0%,
-			rgba(color(orange, 500), 0) 100%
+			rgba(color(primary, 400), 0.2) 0%,
+			rgba(color(primary, 400), 0) 100%
 		);
 		@media (prefers-color-scheme: dark) {
 			background: radial-gradient(
@@ -53,22 +53,22 @@ body {
 }
 
 ::selection {
-	background: color(orange, 200);
+	background: color(primary, 400);
 	@media (prefers-color-scheme: dark) {
-		background: color(orange, 600);
+		background: color(primary, 400);
 	}
 }
 
 a,
 a:visited {
-	color: color(orange, 600);
+	color: color(primary, 400);
 	@media (prefers-color-scheme: dark) {
-		color: color(orange, 300);
+		color: color(primary, 400);
 	}
 	transition: 0.1s ease;
 
 	&:hover {
-		color: color(orange, 500);
+		color: color(primary, 400);
 	}
 }
 
@@ -144,7 +144,7 @@ nav {
 				top: 0.63em;
 				width: 8px;
 				height: 8px;
-				background: teal;
+				background: color(primary, 400);
 				border-radius: 99px;
 			}
 		}
@@ -217,7 +217,7 @@ nav {
 	margin-bottom: 8px;
 	padding: 4px 12px;
 	color: $white;
-	background: teal;
+	background: color(primary, 400);
 	border-radius: 8px;
 }
 
