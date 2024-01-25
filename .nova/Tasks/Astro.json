@@ -1,0 +1,13 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "npm install"
+    },
+    "run" : {
+      "enabled" : true,
+      "script" : "astro dev"
+    }
+  },
+  "openLogOnRun" : "start"
+}
