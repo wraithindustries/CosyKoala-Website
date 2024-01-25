@@ -221,6 +221,17 @@ nav {
 	border-radius: 8px;
 }
 
+.beta_version {
+	display: inline-block;
+	font-family: $codeFont;
+	line-height: 1;
+	margin-bottom: 8px;
+	padding: 4px 12px;
+	color: $white;
+	background: #2563eb;
+	border-radius: 8px;
+}
+
 .date {
 	clear: both;
 	@media (max-width: $tablet) {

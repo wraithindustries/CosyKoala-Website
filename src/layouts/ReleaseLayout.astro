@@ -27,6 +27,7 @@ const { release } = Astro.props;
 			<div class="version_wrapper">
 				<div class="version_info">
 					<div class="version_number">{release.data.versionNumber}</div>
+					{release.data.beta && <div class="beta_version">Beta</div>}
 					<FormattedDate class="date" date={release.data.date} />
 				</div>
 			</div>
