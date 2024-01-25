@@ -1,0 +1,17 @@
+---
+import '../styles/global.scss';
+
+export interface Props {
+  highlightedText: string;
+  remainingText?: String;
+}
+
+const {
+  highlightedText,
+  remainingText,
+} = Astro.props
+---
+
+<div>
+ <h1 class="text-primary">{highlightedText}</h1> { remainingText && <h1>{remainingText}</h1>}
+</div>
