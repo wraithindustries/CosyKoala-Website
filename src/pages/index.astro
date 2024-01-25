@@ -1,10 +1,36 @@
 ---
 import Layout from '../layouts/IndexLayout.astro';
+import Button from '../components/Button.astro';
+import { Image } from 'astro:assets';
+
+import appStoreImage from '../assets/images/app-store.png'
 ---
 
 <Layout>
-	<main>
+	<main class="content">
 		<h1 class="page_title">CosyKoala</h1>
 		<hr />
+		<p>Navigating the challenge of keeping your baby comfortably dressed for the night has never been easier. Our app simplifies this daily puzzle by offering intuitive outfit suggestions based on live temperature data and forecasts. With its visually appealing design, it provides real-time updates and alternative outfit choices, ensuring your little one is cozy from sunset to sunrise. Experience the ease of night-time preparation with our user-friendly app tailored for the comfort and well-being of your baby.</p>
+
+		<h2>Features</h2>
+		<ul>
+		<li><b>Visual Dressing Guide</b>: Not sure what your baby should wear to sleep? Our app provides a visually appealing guide, offering practical outfit suggestions based on the current outside temperature.</li>
+		<li><b>Alternative Outfit Options</b>: Flexibility is key! Get a secondary outfit choice for those just-in-case moments.</li>
+		<li><b>Real-Time Temperature Updates</b>: Stay informed with live updates on the current outside temperature, ensuring your baby’s comfort throughout the night.</li>
+		<li><b>Overnight Low Temperature Forecast</b>: Plan ahead with our overnight low temperature predictions, so your baby stays snug from dusk till dawn.</li>
+		<li><b>Temperature Graph</b>: A user-friendly graph displaying temperature changes from sunset to sunrise, helping you make informed decisions for your baby's comfort.</li>
+		<li><b>Light and dark mode support</b>: CosyKoala’s interface adapts to your environment with light and dark modes, ensuring a pleasant experience and preventing disruptions to sleeping Koalas.</li>
+		</ul>
+
+		<p>And we’re still working hard to bring even more features to CosyKoala, so watch this space! If you’ve got any ideas about what would make CosyKoala better for you, please let us know.</p>
+
+		<p><b>Download CosyKoala Today!</b></p>
+		<p>
+		Ready to transform your nightly baby dressing routine? Download CosyKoala from the iOS App Store and start experiencing nights filled with comfort and joy!</p>
+
+		<div class="pt-6 pl-6">
+			<Image src={appStoreImage} alt='App Store Link'/>
+		</div>
+
 	</main>
 </Layout>

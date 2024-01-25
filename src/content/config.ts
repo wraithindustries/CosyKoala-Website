@@ -8,10 +8,6 @@ const releases = defineCollection({
 			description: z.string(),
 			versionNumber: z.string(),
 			beta: z.boolean(),
-			image: z.object({
-				src: image(),
-				alt: z.string(),
-			}),
 			// Transform string to Date object
 			date: z.date({ coerce: true }),
 		}),
