@@ -2,7 +2,7 @@
   "actions" : {
     "build" : {
       "enabled" : true,
-      "script" : "npm install"
+      "script" : "astro build"
     },
     "run" : {
       "enabled" : true,

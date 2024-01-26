@@ -1,9 +1,10 @@
 ---
-import Layout from '../layouts/IndexLayout.astro';
-import HighlightedTitle from '../components/HighlightedTitle.astro';
+import Layout from '@layouts/IndexLayout.astro';
+import HighlightedTitle from '@components/HighlightedTitle.astro';
 import { Image } from 'astro:assets';
 
-import appStoreImage from '../assets/images/app-store.png'
+import appStoreImage from '@assets/images/app-store.png'
+import appMainScreen from '@assets/images/app-main.png'
 ---
 
 <Layout>
@@ -25,7 +26,7 @@ import appStoreImage from '../assets/images/app-store.png'
 		<p>And we’re still working hard to bring even more features to CosyKoala, so watch this space! If you’ve got any ideas about what would make CosyKoala better for you, please let us know.</p>
 
 		<div class="flex items-top pt-10">
-			<img class="w-1/2" src='./public/images/app-main.png' alt="image description">
+			<Image class="w-1/2" src={appMainScreen} alt="CosyKoala Main Screen"/>
 			<div class="ml-4">
 				<h3> The Main Screen</h3>
 				From this view you can see the current temperature at you location as well as the lowest forecasted temperature. As well as the optimal outfits choices for your little joey!
