@@ -24,6 +24,7 @@ posts.sort((a, b) => +b.data.date - +a.data.date);
 					</div>
 				</div>
 				<div class="content">
+					<a href={`/releases/${post.slug}`}><h1>{post.data.title}</h1></a>
 					{post.render().then(({ Content }) => (
 					<Content />
 					))}
