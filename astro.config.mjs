@@ -4,7 +4,8 @@ import mdx from '@astrojs/mdx';
 
 // https://astro.build/config
 export default defineConfig({
-  root: 'src',
+  root: './',
+  srcDir: "./src",
   site: 'https://cosykoala.app',
   integrations: [tailwind(), mdx()]
 });
