@@ -1,24 +1,7 @@
 ---
-import BaseHead, { type Props as HeadProps } from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-
-type Props = HeadProps;
-
-const { ...head } = Astro.props;
+import BaseLayout from '@layouts/BaseLayout.astro';
 ---
 
-<!doctype html>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width" />
-<html lang="en">
-	<head>
-		<BaseHead {...head} />
-		<body>
-			<div class="glow"></div>
-			<Header />
-			<slot />
-			<Footer />
-		</body>
-	</head>
-</html>
+<BaseLayout title="CosyKoala" description="Keeping your little joey cosy!">
+	<slot/>
+</BaseLayout>
